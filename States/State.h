@@ -31,8 +31,10 @@ public:
 	static bool deadPlayer;
 	static bool textureError;
 
-public:
+protected:
 	State(unsigned width, unsigned height, int buttonCount);
+	
+public:
 	virtual ~State();
 
 	virtual void Navigate(sf::RenderWindow* window, sf::Event event);
