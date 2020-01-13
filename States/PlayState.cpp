@@ -12,6 +12,8 @@ PlayState::PlayState(unsigned width, unsigned height, int buttonCount)
 
 PlayState::~PlayState()
 {
+	while (!levels.empty())
+		levels.pop();
 	delete player;
 }
 
